@@ -93,6 +93,9 @@ scroller.setup({
             }
         }, 250)
     } else if (response.index === 8) {
+        if (interval) {
+            clearInterval(interval)
+        }
         d3.selectAll("path[id^='trash_']").transition().duration(1000).style("opacity", 1)
 
         d3.select('#counter_trash_can').text("Trash cans: " + (total_trash_cans))
