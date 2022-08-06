@@ -17,7 +17,7 @@ scroller.setup({
         // inside each step, let's provide instructions for everything that needs to happen
         d3.select("#big_poop").transition().duration(4000).style("opacity", 0);
         d3.selectAll(".g-map_architecture").transition().duration(4000).style("opacity", 0.5);
-        d3.select("#g-poops_v2-Artboard_1-img").transition().duration(2000).style("opacity", 1);
+        d3.select("#g-poops_v2-Artboard_1-img").transition().duration(2000).style("opacity", 0.8);
 
         if (interval) {
             clearInterval(interval)
