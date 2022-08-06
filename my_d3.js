@@ -62,7 +62,7 @@ scroller.setup({
 
         d3.selectAll("#counter_trash_can, #key_trash_can, #key_background_2, path[id^='trash_']").transition().duration(1000).style("opacity", 0);
         
-    } else if (response.index === 5) {
+    } else if (response.index === 7) {
         if (interval) {
             clearInterval(interval)
         }
@@ -92,14 +92,7 @@ scroller.setup({
                 trash_can_number += 1
             }
         }, 250)
-    } else if (response.index === 5) {
-        if (interval) {
-            clearInterval(interval)
-        }
-
-        
-
-    } else if (response.index === 6) {
+    } else if (response.index === 8) {
         d3.selectAll("path[id^='trash_']").transition().duration(1000).style("opacity", 1)
 
         d3.select('#counter_trash_can').text("Trash can counter: " + (total_trash_cans))
