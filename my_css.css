@@ -21,11 +21,11 @@ path[id^='trash_'] {
   opacity: 0;
 }
 
-h1 {
+h1.headline {
   font-family: "Helvetica Neue";
   text-align: center;
   margin: 3rem auto;
-  font-size: xxx-large;
+  font-size: -webkit-xxx-large;
   font-weight: 450;
 }
 
