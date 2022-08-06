@@ -102,6 +102,10 @@ p {
   margin-right: auto;
 }
 
+.large-image {
+  max-width: 60%;
+}
+
 #big_poop {
   opacity: 1;
 }
