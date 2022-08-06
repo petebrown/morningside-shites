@@ -91,10 +91,6 @@ p {
   text-align: left;
 }
 
-.story-continued {
-  margin-top: 0;
-}
-
 .story-image {
   max-width: 100%;
   display: block;
@@ -103,7 +99,7 @@ p {
 }
 
 .large-image {
-  max-width: 60%;
+  max-width: 80%;
 }
 
 #big_poop {
