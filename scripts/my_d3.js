@@ -23,7 +23,7 @@ scroller.setup({
             clearInterval(interval)
         }
 
-        d3.selectAll("#counter_poop, #key_poop, #key_background_1").transition().duration(1000).style("opacity", 0);
+        d3.selectAll("#counter_poop, #key_poop, #counter_trash_can, #key_trash_can, #key_background_1, #key_background_2").transition().duration(1000).style("opacity", 0);
 
         d3.selectAll("path[id^='poop_']").transition().duration(1000).style("opacity", 0)
     } else if (response.index === 1) {
