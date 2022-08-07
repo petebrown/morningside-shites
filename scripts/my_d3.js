@@ -59,6 +59,11 @@ scroller.setup({
 
         d3.selectAll("path[id^='poop_']").transition().duration(1000).style("opacity", 0.8)
         d3.select('#counter_poop').transition().duration(1000).text("Poop counter: " + total_poops);
+        
+    } else if (response.index === 6) {
+        if (interval) {
+            clearInterval(interval)
+        }
 
         d3.selectAll("#counter_trash_can, #key_trash_can, #key_background_2, path[id^='trash_']").transition().duration(1000).style("opacity", 0);
         
