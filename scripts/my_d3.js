@@ -96,7 +96,7 @@ scroller.setup({
                 
                 trash_can_number += 1
             }
-        }, 250)
+        }, 275)
     } else if (response.index === 8) {
         if (interval) {
             clearInterval(interval)
