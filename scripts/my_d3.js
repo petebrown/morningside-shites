@@ -43,7 +43,7 @@ scroller.setup({
             } else {            
                 id_name = `#poop_${poop_number}`
     
-                d3.select(id_name).style("opacity", 0.87)
+                d3.select(id_name).style("opacity", 0.83)
                 // console.log("Displayed " + id_name)
     
                 d3.select('#counter_poop').text("Poop counter: " + (poop_number + 1))
@@ -57,7 +57,7 @@ scroller.setup({
             clearInterval(interval)
         }
 
-        d3.selectAll("path[id^='poop_']").transition().duration(1000).style("opacity", 0.87)
+        d3.selectAll("path[id^='poop_']").transition().duration(1000).style("opacity", 0.83)
         d3.select('#counter_poop').transition().duration(1000).text("Poop counter: " + total_poops);
         
     } else if (response.index === 6) {
