@@ -17,7 +17,7 @@ scroller.setup({
         // inside each step, let's provide instructions for everything that needs to happen
         d3.select("#big_poop").transition().duration(4000).style("opacity", 0);
         d3.selectAll(".g-map_architecture").transition().duration(4000).style("opacity", 0.5);
-        d3.select("#g-poops_v2-Artboard_1-img").transition().duration(2000).style("opacity", 0.8);
+        d3.select("#g-poops_v2_emoji-Artboard_1-img").transition().duration(2000).style("opacity", 0.8);
 
         if (interval) {
             clearInterval(interval)
@@ -43,7 +43,7 @@ scroller.setup({
             } else {            
                 id_name = `#poop_${poop_number}`
     
-                d3.select(id_name).style("opacity", 0.8)
+                d3.select(id_name).style("opacity", 0.87)
                 // console.log("Displayed " + id_name)
     
                 d3.select('#counter_poop').text("Poop counter: " + (poop_number + 1))
@@ -57,7 +57,7 @@ scroller.setup({
             clearInterval(interval)
         }
 
-        d3.selectAll("path[id^='poop_']").transition().duration(1000).style("opacity", 0.75)
+        d3.selectAll("path[id^='poop_']").transition().duration(1000).style("opacity", 0.87)
         d3.select('#counter_poop').transition().duration(1000).text("Poop counter: " + total_poops);
         
     } else if (response.index === 6) {
@@ -76,9 +76,6 @@ scroller.setup({
 
         d3.selectAll("#counter_trash_can, #key_trash_can, #key_background_2").transition().duration(1000).style("opacity", 1);
 
-        // d3.selectAll("path[id^='trash_']").transition().duration(2500).style("opacity", 1)
-        // d3.select('#counter_trash_can').text("Trash can counter: " + total_trash_cans)
-
         total_trash_cans = d3.selectAll("path[id^='trash_']").size()
         console.log(total_trash_cans + ' trash cans found')
         trash_can_number = 1
@@ -90,7 +87,6 @@ scroller.setup({
                 id_name = `#trash_${trash_can_number}`
     
                 d3.select(id_name).style("opacity", 1)
-                // console.log("Displayed " + id_name)
     
                 d3.select('#counter_trash_can').text("Trash cans: " + (trash_can_number))
                 
